@@ -17,10 +17,10 @@ git clone https://github.com/withfabian/ytdownloader.git
 cd ytdownloader
 ```
 
-**Install Pytube dengan Perintah***
+**Install requirements dengan Perintah***
 
 ```
-pip install pytube
+pip install -r requirements.txt
 ```
 
 
