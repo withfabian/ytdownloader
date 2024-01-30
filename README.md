@@ -6,7 +6,7 @@ Youtube downloader berfungsi untuk mendownload video youtube
 
 Berikut adalah langkah-langkah untuk menginstal dan menjalankan proyek ini:
 
-**Klon Repositori:**
+**Klon Repositori lalu ekstrak:**
 
 ```
 git clone https://github.com/withfabian/ytdownloader.git
@@ -15,12 +15,6 @@ git clone https://github.com/withfabian/ytdownloader.git
 **Masuk Ke Folder ytdownloader**
 ```
 cd ytdownloader
-```
-
-**Install requirements dengan Perintah***
-
-```
-pip install -r requirements.txt
 ```
 
 
@@ -34,11 +28,13 @@ Masih dalam tahap pengembangan, jadi tunggu update selanjutnya oke
 
 ## Deployment
 
-Untuk menjalankan program ketik
+Untuk menjalankan
 
 ```
-python ytd.py
+Klik dua kali file running.bat
+lalu tunggu sampai proses installasi selesai
 ```
+
 
 
 ## 🚀 Tentang saya
