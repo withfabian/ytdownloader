@@ -1,3 +1,4 @@
 pytube
 colorama
 pyfiglet
+pyinstaller
