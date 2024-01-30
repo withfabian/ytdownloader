@@ -8,9 +8,14 @@ Berikut adalah langkah-langkah untuk menginstal dan menjalankan proyek ini:
 
 **Klon Repositori lalu ekstrak:**
 
+
 ```
 git clone https://github.com/withfabian/ytdownloader.git
 ```
+
+atau download file di sini
+<a href="https://github.com/withfabian/ytdownloader/releases/tag/v2.4">Download File Zip</a>
+
 
 **Masuk Ke Folder ytdownloader**
 ```
