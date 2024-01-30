@@ -2,3 +2,5 @@ pytube
 colorama
 pyfiglet
 pyinstaller
+tqdm
+requests
