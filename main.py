@@ -2,6 +2,8 @@ from pytube import YouTube
 from colorama import Fore, Style
 import pyfiglet
 import os
+import requests
+from tqdm import tqdm
 
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -31,7 +33,14 @@ def download_video(url, output_path='.'):
         print("Memulai pengunduhan...\n")
         yt = YouTube(url)
         video_stream = yt.streams.filter(progressive=True, file_extension='mp4').order_by('resolution').desc().first()
-        video_stream.download(output_path)
+        file_size = video_stream.filesize
+        response = requests.get(video_stream.url, stream=True)
+        with open(os.path.join(output_path, 'video.mp4'), 'wb') as f:
+            with tqdm(total=file_size, unit='B', unit_scale=True, unit_divisor=1024, desc="Progress") as pbar:
+                for chunk in response.iter_content(chunk_size=1024):
+                    if chunk:
+                        f.write(chunk)
+                        pbar.update(len(chunk))
         print("\nPengunduhan selesai!")
     except Exception as e:
         print(f"\nTerjadi kesalahan: {str(e)}")
